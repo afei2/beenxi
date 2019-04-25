@@ -1,6 +1,6 @@
 $(function(){
     $('#fullpage').fullpage({
-		anchors:['page1','page2','page3','page4'],
+		// anchors:['page1','page2','page3','page4','page5'],
 	});
 });
 
@@ -25,3 +25,13 @@ var mySwiper3 = new Swiper('.main_3',{
 	    clickable :true,
 	  }
 })
+// var mySwiper4 = new Swiper('.main_04', {
+//   controller: {
+//     control: [swiper1,swiper2],
+//     inverse: true,
+//     by: 'slide',
+//   },
+//   //controller: true,
+// });
+
+

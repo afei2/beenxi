@@ -53,13 +53,14 @@ a * { *cursor: pointer }
     margin: 0 auto;
     width: 1200px;
 }
+.lf {float: left;}
+.rf {float: right;}
+
 
 header{
-    width: 1920px;
+    width: 100%;
 	height: 95px;
     background: url(../img/bg01.png) no-repeat;
-    position: fixed;
-    z-index: 11;
 }
 
 header .w1200 {
@@ -126,147 +127,171 @@ header .w1200 ul li:hover div {
     width: 485px;
     height: 100%;
     background: #fff;
+    display: none;
 }
 .nav b {
     padding: 18px 0 18px 210px;
     display: block;
     border-bottom: 2px solid #0d3575;
 }
-.section_1 {
-    background: url(../img/bg03.jpg)center center;
+.nav ol{
+    margin: 50px 45px;
 }
-.main_1 {
-   height: 100%;
+.nav ol li {
+    margin-bottom: 25px;
 }
-.main_1 .w1200 img {
-    margin-top: 21%;
-}
-.swiper-pagination-bullet {
-    width: 16px !important;
-    height: 16px !important;
-    opacity: 0.5 !important;
-}
-
-.section_2 {
-    background: url(../img/bg04.jpg)center center;
-}
-.main_2 {
-    height: 100%;
-}
-.main_2 .w1200 b{
-    font-size: 60px;
-    color: #0a3474;
-    margin-top: 154px;
-    text-align: center;
-    display: block;
-}
-.main_2 .w1200 h6{
-    font-size: 48px;
-    color: #fff;
-    margin: 39px 0 59px 0;
-    text-align: center;
-}
-.main_2 .w1200 p {
-    font-size: 20px;
-    line-height: 34px;
-    color: #ffffff;
-    text-align: center;
-}
-.main_2 .w1200 div {
-    width: 510px;
-    margin:110px 102px 0 65px;
-    float: left;
-}
-.main_2 .w1200 div span {
+.nav ol li h6 a {
     font-size: 18px;
-    color: #f5fbff;
+    color: #333333;
+}
+.nav ol li h6 i{
+    float: right;
+}
+.nav ol li h6 em{
+    float: right;
+    display: none;
+}
+.nav ol li.open i{
+    display: none;
+}
+.nav ol li.open em {
     display: block;
-    line-height: 40px;
 }
-.main_2 .w1200 img{
+.nav ol li div {
+    width: 300px;
+    margin-left: 20px;
+    display: none;
+}
+.nav ol li div p {
     float: left;
-    margin-top: 60px;
+    width: 50%;
+    margin-top: 30px;
 }
-.section_3{
-    background: url(../img/bg05.jpg)center center no-repeat;
-    position: relative;
+.nav ol li div p a {
+    font-size: 12px;
+    color: #666666;
+}
+.nav ol li div p img{
+    display: block;
+    margin-bottom: 15px;
 }
 
-.main_3 {
-    height:100%;
+
+footer {
+    background-color: #213e72;
 }
 
-.main_3 h3{
-    font-size: 64px;
-    color: #0a3474;
-    padding-top: 100px;
-    text-align: center;
+.joinbox {
+    border-bottom: 1px solid #b2d1e9;
+    height: 93px;
 }
-.main_3 .w1200 {
-    margin-top: 143px;
- }
-.main_3 .w1200 ul {
-    margin: 0 12px;
-}
-.main_3 .w1200 ul li {
+.joinbox div p{
+    font-size: 24px;
+    color: #ffffff;
     float: left;
-    position: relative;
+    line-height: 93px;
 }
-.kl {
-    position: absolute;
-    top: -219px;
-    left: 40px;
+.joinbox div ul {
+    float: right;
 }
-.main_3 .w1200  h6 a{
-    display: block;
-    width: 141px;
-    line-height: 40px;
-    background-color: #35538c;
-    border-radius: 20px;
+.joinbox div ul li{
+    float: left;
+    margin-left: 9px;
+    margin-top: 27px;
+}
+.joinbox div ul li input {
+    width: 253px;
+    height: 40px;
+    background-color: #ffffff;
+    border: solid 1px #e5e5e5;
+    text-indent: 10px;
     font-size: 16px;
+}
+.joinbox div ul li button{
+    width: 293px;
+    height: 40px;
+    background-color: #b2d1e9;
+    font-size: 18px;
     color: #ffffff;
-    margin: 0 auto;
     text-align: center;
-    margin-top: 55px;
+    line-height: 40px;
+    border:none;
 }
-.buy {
-    position: absolute;
-    bottom: 22px;
-    right: 360px;
-    width: 302px;
-    height: 126px;
-    background:url(../img/bg06.png);
-    border-radius: 10px;
+.link {
+    font-size: 16px;
+    padding: 21px 0 19px 0;
+    border-bottom: 1px solid #2f4e86;
 }
-.buy li {
+.link p {
     float: left;
-    width: 80px;
-    text-align: center;
-    margin:11px 0 0 20px;
-}
-.buy li a{
-    display: block;
-    width: 80px;
-    height: 27px;
-    background-color: #d50804;
-    border-radius: 14px;
-    line-height: 27px;
     color: #ffffff;
-    margin-top: 13px;
+    margin-right: 12px;
 }
-.buy li p{
-    font-size: 24px;
-    color: #0a3474;
-    font-size: 24px;
-    margin-bottom: 17px;
+.link a {
+    color: #b7b7b7;
+    margin-right: 30px;
 }
-.main_4box {
-    height: 919px;
-    background: url(../img/bg07.jpg)center center;
+.msg {
+    border-top: 1px solid #1b3769;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #2f4e86;
 }
-.main_4 h3 {
-    font-size: 64px;
-    color: #0a3474;
+.logod {
+    margin: 15px 32px 0 0;
+    float: left;
+}
+.aboutus_1 {
+    width: 176px;
+    float: left;
+    margin-top: 46px;
+    padding-right: 58px;
+}
+.aboutus_1 h6,.aboutus_2 h6 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+.aboutus_1 a,.aboutus_2 a {
+    display: block;
+    font-size: 16px;
+    color: #b7b7b7;
+    margin-bottom: 9px;
+}
+.aboutus_2 {
+    float: left;
+    width: 296px;
+    margin-top: 44px; 
+    padding: 0 63px 2px 52px;
+    text-align: left;
+}
+.aboutus_2 a {
+    float: left;
+    width: 50%;
+}
+.dqr {
+    float: right;
+    margin-top: 29px;
+    padding-left: 13px;
+}
+.dqr ul li{
+    width: 115px;
     text-align: center;
-    padding-top: 165px;
+    float: left;
+    margin-left: 45px;
 }
+.dqr ul li p {
+    font-size: 16px;
+    color: #cccccc;
+    margin-top: 10px;
+}
+.address {
+    border-top: 1px solid #1b3769;
+    padding: 20px 0 17px 0;
+}
+.address p {
+    text-align: center;
+    color: #b7b7b7;
+}
+.address p i {
+    margin: 0 8px;
+} 

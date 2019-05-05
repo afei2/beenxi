@@ -120,6 +120,17 @@ header .w1200 ul li div {
 header .w1200 ul li:hover div {
     display: block;
 }
+.banners {
+    height: 450px;
+    overflow: hidden;
+}
+.banners a {
+    display: block;
+}
+.banners a img {
+    width: 100%;
+    height: 450px;
+}
 .nav {
     position: fixed;
     left: 0;
@@ -128,6 +139,7 @@ header .w1200 ul li:hover div {
     height: 100%;
     background: #fff;
     display: none;
+    z-index: 999;
 }
 .nav b {
     padding: 18px 0 18px 210px;
@@ -151,12 +163,14 @@ header .w1200 ul li:hover div {
     float: right;
     display: none;
 }
-.nav ol li.open i{
-    display: none;
+.nav ol li h6 i.open {
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg);     /* IE 9 */
+    -moz-transform:rotate(180deg);    /* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg);  /* Opera */
 }
-.nav ol li.open em {
-    display: block;
-}
+
 .nav ol li div {
     width: 300px;
     margin-left: 20px;
@@ -174,6 +188,47 @@ header .w1200 ul li:hover div {
 .nav ol li div p img{
     display: block;
     margin-bottom: 15px;
+}
+header ul li a{
+    position: relative;
+}
+header ul li p {
+    position: absolute;
+    width: 140px;
+	height: 90px;
+	background-color: #213e72;
+    display: none;
+    padding: 21px 8px;
+    line-height: 24px;
+}
+.hym {
+    position: absolute;
+    display: none;
+    top: 27px;
+    left: 0;
+
+}
+.scroll {
+    width: 75px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 700px;
+    left: 265px;
+    z-index: 99;
+}
+.scroll ul li {
+    height: 80px;
+    text-align: center;
+}
+.scroll ul li a p {
+    color: #666666;
+    padding-top: 21px;
+}
+.scroll ul li.open {
+    background-color: #213e72;
+}
+.scroll ul li.open p {
+    color: #fff;
 }
 
 
@@ -295,3 +350,40 @@ footer {
 .address p i {
     margin: 0 8px;
 } 
+.to-top {
+    position: fixed;
+    right: 360px;
+    bottom: 376px;
+    z-index: 999;
+    display: none;
+}
+
+
+.swiper_4 {
+    width: 1200px;
+    height: 569px;
+    background: url(../img/bg08.jpg)center center;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+}
+.swiper_4 .gallery-top{
+    width: 1031px;
+    height: 100%;
+    float: left;
+}
+.swiper_4  .gallery-thumbs {
+    margin-top: 17px;
+}
+.swiper_4 .swiper-button-prev{
+    display: none;
+}
+.swiper_4 .swiper-button-next{
+    width: 72px;
+    height: 72px;
+    background: url(../img/bg42.png) !important;
+    position: absolute;
+    right: 137px;
+    top: 450px;
+    z-index: 999;
+}

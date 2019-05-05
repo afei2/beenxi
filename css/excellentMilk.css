@@ -1,0 +1,71 @@
+.main_1box {
+	height: 905px;
+	background: url(../img/bg22.jpg)center center;
+}
+.main_1 h3{
+	font-size: 45px;
+	color: #ffffff;
+	line-height: 72px;
+	text-align: center;
+	padding: 81px 0 59px 0;
+}
+.main_2box {
+	background: url(../img/bg23.jpg)center center;
+	height: 490px;
+}
+.main_2 {
+	width: 1201px;
+}
+.main_2 .swiper-button-prev{
+	width: 77px;
+	height: 64px;
+	background: url(../img/p91.png);
+	left: 0;
+}
+.main_2 .swiper-button-next{
+	width: 77px;
+	height: 64px;
+	background: url(../img/p92.png);
+	right: 0;
+}
+.main_3box {
+	height: 1015px;
+	background: url(../img/bg24.jpg);
+}
+.main_3 {
+	text-align: center;
+	color: #ffffff;
+}
+.main_3 h3{
+	font-size: 45px;
+	padding-top: 79px;
+}
+.main_3 h6 {
+	font-size: 36px;
+	margin: 30px 0 87px 0;
+}
+.main_3 ul {
+	margin-bottom: 65px;
+}
+.main_3 ul li {
+	float: left;
+	width: 247px;
+	height: 337px;
+	border-right: 1px solid #d1ebff;
+	padding: 0 75px;
+}
+.main_3 ul li:last-child {
+	border-right: none;
+}
+.main_3 ul li p {
+	font-size: 18px;
+	line-height: 30px;
+	margin-top: 35px;
+}
+.swiper_01{
+	height: 266px;
+	background: url(../img/bg25.jpg)center center;
+}
+.swiper_01 .swiper-wrapper{
+	margin-top: 45px;
+}

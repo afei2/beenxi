@@ -1,0 +1,96 @@
+#container{height:100%}
+
+.main_1box {
+	height: 660px;
+	background: url(../img/bg39.jpg)center center;
+}
+.main_1 {
+	padding-top: 75px;
+}
+.form {
+	width: 640px;
+	float: left;
+}
+.form h6 {
+	font-size: 30px;
+	color: #333333;
+	margin-bottom: 31px;
+}
+.form ul li {
+	width: 100%;
+
+}
+.form ul li input {
+	width: 100%;
+	height: 50px;
+	text-indent: 17px;
+	font-size: 16px;
+	color: #999999;
+	margin-bottom: 18px;
+	border: none;
+}
+.form ul li:first-child input{
+	width: 301px;
+}
+.form ul li textarea{
+	width: 623px;
+	height: 178px;
+	background-color: #ffffff;
+	padding: 22px 0 0 17px;
+	border: none;
+}
+.form p {
+	font-size: 12px;
+	color: #213e72;
+	text-align: center;
+	margin: 10px 0 30px 0;
+}
+.form button {
+	width: 317px;
+	height: 55px;
+	background-color: #0a3474;
+	border:none;
+	font-size: 24px;
+	color: #ffffff;
+	margin: 0 auto;
+	display: block;
+}
+.msg_1 {
+	float: right;
+	width: 488px;
+}
+.msg_1 h6 {
+	font-size: 30px;
+	color: #333333;
+	margin-bottom: 32px;
+}
+.msg_1 ul li {
+	float: left;
+	width: 200px;
+	text-align: center;
+	margin-right: 87px;
+}
+.msg_1 ul li:last-child {
+	margin-right: 0;
+}
+.msg_1 ul li p{
+	font-size: 16px;
+	color: #333333;
+	margin-top: 13px;
+}
+.msg_1 h3 {
+	font-size: 24px;
+	color: #0a3474;
+	margin: 41px 0 47px 0;
+}
+.msg_1 h3 i {
+	padding-bottom: 21px;
+	border-bottom: 2px solid #0a3474;
+}
+.msg_1 ol li{
+	margin-bottom: 13px;
+}
+.msg_1 ol li p {
+	font-size: 16px;
+	color: #333333;
+}

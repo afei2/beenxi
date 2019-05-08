@@ -69,6 +69,16 @@
 	margin-top: 22px;
 	display: block;
 }
+.news_1 ul li b{
+	width: 380px;
+	height: 210px;
+	overflow: hidden;
+	display: block;
+	border: 1px solid #e5e5e5;
+}
+.news_1 ul li:hover b {
+	border: 1px solid #0a3474;
+}
 .page {
 	width: 369px;
 	margin: 0 auto; 

@@ -67,13 +67,16 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
                             <img src="img/weiboqr.png" alt="">
                         </div>
                     </li>
-                    <li><a href="MemberCenter.html"><img src="img/saoma.png" alt=""></a></li>
-                    <li><a href="#">会员注册</a>I<a href="#">登录</a></li>
+                    <li><a href="purchase.html"><img src="img/saoma.png" alt=""></a></li>
+                    <li>
+                        <a class="huiy" href="#">会员注册<b class="hym"><img src="img/ewm.jpg" alt=""><p class="dlw">会员系统正在开发中…感谢支持的宝妈们关注倍恩喜官方微信领取第一波会员哦~</p></b></a>
+                        I<a class="dengl" href="#">登录<b style="left:-88px;" class="hym"><img src="img/ewm.jpg" alt=""><p class="dlw">会员系统正在开发中…感谢支持的宝妈们关注倍恩喜官方微信领取第一波会员哦~</p></b></a>
+                    </li>
                 </ul>
             </div>
         </header>
         <div style="height:450px;" class="map">
-             <div id="container"></div>
+             <div style="height:100%;"  id="map"></div>
         </div>
         <div class="main_1box">
             <div class="main_1 w1200">
@@ -104,10 +107,7 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
             </div>
         </div>
         <!--  -->
-        <div class="to-top">
-            <img src="img/top.jpg" alt="">
-        </div>
-        <footer>
+       <footer>
             <div class="joinbox">
                 <div class="w1200 cf">
                     <p>合作留言:</p>
@@ -135,7 +135,7 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
                     <a href="index.html">倍恩喜</a>
                 </div>
                 <div  class="aboutus_2">
-                    <h6>关于我们 </h6>
+                    <h6>全系产品</h6>
                     <i class="cf">
                     <a href="product01.html">孕产妇羊奶粉</a>
                     <a href="product02.html">婴幼儿羊奶粉</a>
@@ -162,21 +162,69 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/swiper.min.js"></script>
         <script src="js/common.js"></script>
-        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=i2oTvQr4miBXdeRFFd5NBlfX3H2U8OLD">
-        //v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"
-        </script>
+       <!--引用百度地图API-->
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=i2oTvQr4miBXdeRFFd5NBlfX3H2U8OLD"></script>
         <script type="text/javascript"> 
-            var map = new BMap.Map("container");
-            // 创建地图实例  
-            var point = new BMap.Point(112.900214,28.219475);
-            // 创建点坐标  
-            map.centerAndZoom(point, 19);
-            // 初始化地图，设置中心点坐标和地图级别  
-            var marker = new BMap.Marker(point);        // 创建标注    
-            map.addOverlay(marker);                     // 将标注添加到地图中 
-            marker.setAnimation(BMAP_ANIMATION_BOUNCE);//跳动的动画
-            map.enableScrollWheelZoom(true);
-            //开启鼠标滚轮缩放
+           //创建和初始化地图函数：
+            function initMap(){
+            createMap();//创建地图
+            setMapEvent();//设置地图事件
+            addMapControl();//向地图添加控件
+            addMapOverlay();//向地图添加覆盖物
+            }
+            function createMap(){ 
+            map = new BMap.Map("map"); 
+            map.centerAndZoom(new BMap.Point(112.90025,28.219527),19);
+            }
+            function setMapEvent(){
+            map.enableScrollWheelZoom();
+            map.enableKeyboard();
+            map.enableDragging();
+            map.enableDoubleClickZoom()
+            }
+            function addClickHandler(target,window){
+            target.addEventListener("click",function(){
+                target.openInfoWindow(window);
+            });
+            }
+            function addMapOverlay(){
+            var markers = [
+                {content:"纽尔生物科技（湖南）有限公司<br/>地址：湖南省长沙市岳麓区麓谷坐标A栋10楼<br/>全国客服热线：400-893-8886",title:"",imageOffset: {width:-46,height:-21},position:{lat:28.219578,lng:112.900057}},
+            ];
+            for(var index = 0; index < markers.length; index++ ){
+                var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+                var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+                })});
+                var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+                var opts = {
+                width: 200,
+                title: markers[index].title,
+                enableMessage: false
+                };
+                var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+                marker.setLabel(label);
+                addClickHandler(marker,infoWindow);
+                map.addOverlay(marker);
+            };
+            var labels = [
+            ];
+            for(var index = 0; index < labels.length; index++){
+                var opt = { position: new BMap.Point(labels[index].position.lng,labels[index].position.lat )};
+                var label = new BMap.Label(labels[index].content,opt);
+                map.addOverlay(label);
+            };
+            }
+            //向地图添加控件
+            function addMapControl(){
+            var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+            scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+            map.addControl(scaleControl);
+            var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:0});
+            map.addControl(navControl);
+            }
+            var map;
+            initMap();
         </script>  
     </body>
 </html>

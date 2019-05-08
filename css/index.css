@@ -1,11 +1,21 @@
 header{
     width: 100%;
-    height: 95px;
+    height: 80px;
     background: url(../img/bg01.png) no-repeat;
     position: fixed;
     z-index: 11;
 }
+header .w1200 h1 {
+    margin: 8px 0;
+    float: left;
 
+}
+header .w1200 .navb {
+    margin-top: 30px;
+}
+header .w1200 ul {
+    margin-top:25px; 
+}
 .section_1 {
     
 }
@@ -33,14 +43,15 @@ header{
 .main_2 .w1200 b{
     font-size: 60px;
     color: #0a3474;
-    margin-top: 70px;
+    margin-top: 150px;
     text-align: center;
     display: block;
+    font-family:Arial Rounded Bold;
 }
 .main_2 .w1200 h6{
     font-size: 48px;
     color: #fff;
-    margin: 30px 0 50px 0;
+    margin: 30px 0;
     text-align: center;
 }
 .main_2 .w1200 p {
@@ -51,7 +62,7 @@ header{
 }
 .main_2 .w1200 div {
     width: 510px;
-    margin:110px 102px 0 65px;
+    margin:60px 102px 0 65px;
     float: left;
 }
 .main_2 .w1200 div span {
@@ -60,10 +71,11 @@ header{
     display: block;
     line-height: 40px;
 }
-.main_2 .w1200 b img{
-    float: left;
+.main_2 .w1200 h5{
     margin-top: 60px;
 }
+
+
 .section_3{
     background: url(../img/bg05.jpg)center center no-repeat;
     position: relative;
@@ -78,9 +90,11 @@ header{
     color: #0a3474;
     padding-top: 100px;
     text-align: center;
+    font-family: qingyuan;
 }
 .main_3 .w1200 {
     margin-top: 143px;
+    position: relative;
  }
 .main_3 .w1200 ul {
     margin: 0 12px;
@@ -94,7 +108,8 @@ header{
     top: -219px;
     left: 40px;
 }
-.main_3 .w1200  h6 a{
+.main_3  h6 a{
+    position: absolute;
     display: block;
     width: 141px;
     line-height: 40px;
@@ -104,7 +119,9 @@ header{
     color: #ffffff;
     margin: 0 auto;
     text-align: center;
-    margin-top: 55px;
+    bottom: 70px;
+    left: 46%;
+    z-index: 99;
 }
 .buy {
     position: absolute;
@@ -411,7 +428,7 @@ header{
 .forms {
     width: 840px;
     margin: 0 auto;
-    margin-top: -24px;
+    margin-top: -35px;
 }
 .forms input {
     width: 100%;
@@ -476,3 +493,19 @@ header{
     margin-top: 17px;
     line-height: 30px;
 }
+/* .section_2 .swiper-slide {
+    width: 100% !important;
+    overflow: hidden;
+} */
+/* header.open {
+    height: 60px;
+}
+header.open ul {
+    margin-top: 16px;
+}
+header.open .navb {
+    margin-top: 18px;
+}
+header.open h1 {
+    margin:0;
+} */

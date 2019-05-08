@@ -71,3 +71,9 @@ var galleryTop = new Swiper('.swiper_4 .gallery-top', {
 
 
 
+$('.huiy').click(function(){
+	$(".huiy b").fadeToggle();
+})
+$('.dengl').click(function(){
+	$(".dengl b").fadeToggle();
+})

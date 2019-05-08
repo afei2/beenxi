@@ -23,28 +23,7 @@ footer {
 	height: 604px;
 	width: 100%;
 }
-.scroll {
-	width: 75px;
-	background-color: #ffffff;
-	position: fixed;
-	top: 500px;
-	left: 265px;
-	z-index: 99;
-}
-.scroll ul li {
-	height: 80px;
-	text-align: center;
-}
-.scroll ul li a p {
-	color: #666666;
-	padding-top: 21px;
-}
-.scroll ul li.open {
-	background-color: #213e72;
-}
-.scroll ul li.open p {
-	color: #fff;
-}
+
 .product_01 {
 	height: 1666px;
 	background: url(../img/bg15.jpg)center center;
@@ -214,4 +193,68 @@ footer {
 }
 .product_03box_pink {
 	background: #fde9e2;
+}
+.product{
+	background: url(../img/bg15.jpg);
+	padding-top: 80px;
+	padding-bottom: 20px;
+}
+.product .tab-tilte{
+	width: 75px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 0;
+	left: -95px;
+	z-index: 99;
+}
+#app {
+	position: relative;
+}
+.product .tab-tilte li {
+	height: 80px;
+	text-align: center;
+}
+.product .tab-tilte li p {
+	color: #666666;
+	padding-top: 21px;
+}
+.product .tab-tilte li.active {
+	background-color: #213e72;
+}
+.product .tab-tilte li.active p {
+	color: #fff;
+}
+.product .w1200{
+	width: 1160px;
+	background: url(../img/bg16.jpg)center center;
+	padding: 21px 20px 0 20px;
+}
+
+.product .w1200 ul {
+	margin-bottom: 20px;
+}
+.product .w1200 ul li {
+	width: 259px;
+	height: 371px;
+	background-color: #c5ddef;
+	border: solid 1px #c5ddef;
+	text-align: center;
+	float: left;
+	margin-right: 38px;
+}
+.product .w1200 ul li:last-child {
+	margin-right: 0;
+}
+.product .w1200 ul li b {
+	display: block;
+	width: 150px;
+	margin: 31px auto;
+}
+.product .w1200 ul li p {
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 13px;
+}
+.product .w1200 ul li:hover {
+	border: solid 1px #ffffff;
 }

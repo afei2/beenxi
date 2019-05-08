@@ -5,6 +5,23 @@
 	background: url(../img/bg10.jpg)center center;
 	overflow: hidden;
 }
+.content_01 {
+	position: relative;
+}
+.scroll {
+	position: absolute;
+	top: 70px;
+	left: -95px;;
+}
+.scroll.fixed {
+	position: fixed;
+	top: 100px;
+	left: 255px;
+}
+.scroll p{
+	font-size: 14px !important;
+}
+
 .content_01 h3 {
 	font-size: 45px;
 	color: #ffffff;

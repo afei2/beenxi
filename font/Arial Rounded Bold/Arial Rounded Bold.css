@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Arial Rounded Bold";
+  src: url("Arial Rounded Bold.woff2") format("woff2"),
+       url("Arial Rounded Bold.woff") format("woff"),
+       url("Arial Rounded Bold.ttf") format("truetype"),
+       url("Arial Rounded Bold.eot") format("embedded-opentype"),
+       url("Arial Rounded Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

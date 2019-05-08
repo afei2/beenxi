@@ -67,23 +67,18 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
                             <img src="img/weiboqr.png" alt="">
                         </div>
                     </li>
-                    <li><a href="MemberCenter.html"><img src="img/saoma.png" alt=""></a></li>
-                    <li><a href="#">会员注册</a>I<a href="#">登录</a></li>
+                    <li><a href="purchase.html"><img src="img/saoma.png" alt=""></a></li>
+                    <li>
+                        <a class="huiy" href="#">会员注册<b class="hym"><img src="img/ewm.jpg" alt=""><p class="dlw">会员系统正在开发中…感谢支持的宝妈们关注倍恩喜官方微信领取第一波会员哦~</p></b></a>
+                        I<a class="dengl" href="#">登录<b style="left:-88px;" class="hym"><img src="img/ewm.jpg" alt=""><p class="dlw">会员系统正在开发中…感谢支持的宝妈们关注倍恩喜官方微信领取第一波会员哦~</p></b></a>
+                    </li>
                 </ul>
             </div>
         </header>
         <div class="banners">
             <a href="#"><img src="img/banners03.jpg" alt=""></a>
         </div>
-        <div class="scroll">
-            <ul>
-                <li class="open"><a href="#"><p>全部<br/>产品</p></a></li>
-                <li><a href="#"><p>婴幼儿配<br/>方羊奶粉</p></a></li>
-                <li><a href="#"><p>孕产妇配<br/>方羊奶粉</p></a></li>
-                <li><a href="#"><p>学生配<br/>方羊奶粉</p></a></li>
-            </ul>
-        </div>
-        <div class="product_01">
+        <!-- <div class="product_01">
             <div class="w1200">
                 <ul class="cf">
                     <li><a href="#">
@@ -164,9 +159,193 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
                     </a></li>
                 </ul>
             </div>
-        </div>
-        <div class="to-top">
-            <img src="img/top.jpg" alt="">
+        </div> -->
+        <div class="product">
+            <div id="app" class="w1200">
+                <ol class="tab-tilte">
+                    <li @click="cur=0" class="open" :class="{active:cur==0}">
+                        <p>全部<br/>产品</p>
+                    </li>
+                    <li @click="cur=1" :class="{active:cur==1}">
+                        <p>婴幼儿配<br/>方羊奶粉</p>
+                    </li>
+                    <li @click="cur=2" :class="{active:cur==2}">
+                        <p>孕产妇配<br/>方羊奶粉</p>
+                    </li>
+                    <li @click="cur=3" :class="{active:cur==3}">
+                        <p>学生配<br/>方羊奶粉</p>
+                    </li>
+                </ol>
+                <div class="tab-content">
+                    <div v-show="cur==0">
+                        <ul class="cf">
+                            <li><a href="#">
+                                <b><img src="img/p28.png" alt=""></b>
+                                <p>婴儿配方羊奶粉   800g</p>
+                                <p>0~6个月婴儿（一段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p29.png" alt=""></b>
+                                <p>较大婴儿配方羊奶粉   800g</p>
+                                <p>6~12个月较大婴儿（二段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p30.png" alt=""></b>
+                                <p>幼儿配方羊奶粉   800g</p>
+                                <p>12~36个月幼儿（三段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p31.png" alt=""></b>
+                                <p>婴儿配方羊奶粉 550g</p>
+                                <p>0~6个月婴儿（一段）</p>
+                            </a></li>
+                        </ul>
+                        <ul class="cf">
+                            <li><a href="#">
+                                <b><img src="img/p32.png" alt=""></b>
+                                <p>较大婴儿配方羊奶粉   800g</p>
+                                <p>6~12个月较大婴儿（二段</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p33.png" alt=""></b>
+                                <p>幼儿配方羊奶粉   800g</p>
+                                <p>12~36个月幼儿（三段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p34.png" alt=""></b>
+                                <p>孕产妇配方羊奶粉   550g </p>
+                                <p>纯羊乳蛋白配方 </p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p35.png" alt=""></b>
+                                <p>儿童配方羊奶粉   550g </p>
+                                <p>适用人群：4岁以上 </p>
+                            </a></li>
+                        </ul>
+                        <ul class="cf">
+                            <li><a href="#">
+                                <b><img src="img/p36.png" alt=""></b>
+                                <p>婴儿配方羊奶粉   300g</p>
+                                <p>0~6个月婴儿（一段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p37.png" alt=""></b>
+                                <p>较大婴儿配方羊奶粉   300g</p>
+                                <p>6~12个月较大婴儿（二段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p38.png" alt=""></b>
+                                <p>幼儿配方羊奶粉   300g </p>
+                                <p>12~36个月幼儿（三段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p39.png" alt=""></b>
+                                <p>婴儿配方羊奶粉（老包装）</p>
+                                <p>0~6个月婴儿（一段）</p>
+                            </a></li>
+                        </ul>
+                        <ul class="cf">
+                            <li><a href="#">
+                                <b><img src="img/p40.png" alt=""></b>
+                                <p>较大婴儿配方羊奶粉（老包装）</p>
+                                <p>6~12个月较大婴儿（二段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p41.png" alt=""></b>
+                                <p>幼儿配方羊奶粉（老包装）</p>
+                                <p>12~36个月幼儿（三段）</p>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div v-show="cur==1">
+                        <ul class="cf">
+                            <li><a href="#">
+                                <b><img src="img/p28.png" alt=""></b>
+                                <p>婴儿配方羊奶粉   800g</p>
+                                <p>0~6个月婴儿（一段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p29.png" alt=""></b>
+                                <p>较大婴儿配方羊奶粉   800g</p>
+                                <p>6~12个月较大婴儿（二段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p30.png" alt=""></b>
+                                <p>幼儿配方羊奶粉   800g</p>
+                                <p>12~36个月幼儿（三段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p31.png" alt=""></b>
+                                <p>婴儿配方羊奶粉 550g</p>
+                                <p>0~6个月婴儿（一段）</p>
+                            </a></li>
+                        </ul>
+                        <ul class="cf">
+                            <li><a href="#">
+                                <b><img src="img/p32.png" alt=""></b>
+                                <p>较大婴儿配方羊奶粉   800g</p>
+                                <p>6~12个月较大婴儿（二段</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p33.png" alt=""></b>
+                                <p>幼儿配方羊奶粉   800g</p>
+                                <p>12~36个月幼儿（三段）</p>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div v-show="cur==2">
+                        <ul class="cf">
+                            <li><a href="#">
+                                <b><img src="img/p36.png" alt=""></b>
+                                <p>婴儿配方羊奶粉   300g</p>
+                                <p>0~6个月婴儿（一段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p37.png" alt=""></b>
+                                <p>较大婴儿配方羊奶粉   300g</p>
+                                <p>6~12个月较大婴儿（二段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p38.png" alt=""></b>
+                                <p>幼儿配方羊奶粉   300g </p>
+                                <p>12~36个月幼儿（三段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p34.png" alt=""></b>
+                                <p>孕产妇配方羊奶粉   550g </p>
+                                <p>纯羊乳蛋白配方 </p>
+                            </a></li>
+                        </ul>
+                        <ul class="cf">
+                            <li><a href="#">
+                                <b><img src="img/p35.png" alt=""></b>
+                                <p>儿童配方羊奶粉   550g </p>
+                                <p>适用人群：4岁以上 </p>
+                            </a></li>
+                        </ul>
+                        
+                    </div>
+                    <div v-show="cur==3">
+                        <ul class="cf">
+                            <li><a href="#">
+                                <b><img src="img/p39.png" alt=""></b>
+                                <p>婴儿配方羊奶粉（老包装）</p>
+                                <p>0~6个月婴儿（一段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p40.png" alt=""></b>
+                                <p>较大婴儿配方羊奶粉（老包装）</p>
+                                <p>6~12个月较大婴儿（二段）</p>
+                            </a></li>
+                            <li><a href="#">
+                                <b><img src="img/p41.png" alt=""></b>
+                                <p>幼儿配方羊奶粉（老包装）</p>
+                                <p>12~36个月幼儿（三段）</p>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
             <div class="joinbox">
@@ -196,7 +375,7 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
                     <a href="index.html">倍恩喜</a>
                 </div>
                 <div  class="aboutus_2">
-                    <h6>关于我们 </h6>
+                    <h6>全系产品</h6>
                     <i class="cf">
                     <a href="product01.html">孕产妇羊奶粉</a>
                     <a href="product02.html">婴幼儿羊奶粉</a>
@@ -222,7 +401,8 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
         </footer>
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/swiper.min.js"></script>
+        <script src="js/vue.js"></script>
         <script src="js/common.js"></script>
-        <script src="js/aboutUs.js"></script>
+        <script src="js/product.js"></script>
     </body>
 </html>

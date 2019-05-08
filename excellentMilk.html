@@ -67,8 +67,11 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
                             <img src="img/weiboqr.png" alt="">
                         </div>
                     </li>
-                    <li><a href="MemberCenter.html"><img src="img/saoma.png" alt=""></a></li>
-                    <li><a href="#">会员注册</a>I<a href="#">登录</a></li>
+                    <li><a href="purchase.html"><img src="img/saoma.png" alt=""></a></li>
+                    <li>
+                        <a class="huiy" href="#">会员注册<b class="hym"><img src="img/ewm.jpg" alt=""><p class="dlw">会员系统正在开发中…感谢支持的宝妈们关注倍恩喜官方微信领取第一波会员哦~</p></b></a>
+                        I<a class="dengl" href="#">登录<b style="left:-88px;" class="hym"><img src="img/ewm.jpg" alt=""><p class="dlw">会员系统正在开发中…感谢支持的宝妈们关注倍恩喜官方微信领取第一波会员哦~</p></b></a>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -136,40 +139,16 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
                 <div class="swiper-container swiper_01">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="img/p96.jpg" alt="">
+                            <img src="img/p000.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/p97.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/p98.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/p99.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/p100.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/p101.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/p102.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/p103.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/p104.jpg" alt="">
+                            <img src="img/p000.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="to-top">
-            <img src="img/top.jpg" alt="">
-        </div>
-        <footer>
+       <footer>
             <div class="joinbox">
                 <div class="w1200 cf">
                     <p>合作留言:</p>
@@ -197,7 +176,7 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
                     <a href="index.html">倍恩喜</a>
                 </div>
                 <div  class="aboutus_2">
-                    <h6>关于我们 </h6>
+                    <h6>全系产品</h6>
                     <i class="cf">
                     <a href="product01.html">孕产妇羊奶粉</a>
                     <a href="product02.html">婴幼儿羊奶粉</a>
@@ -226,23 +205,24 @@ if(/*@cc_on!@*/false && document.documentMode === 10) document.documentElement.c
         <script src="js/common.js"></script>
         <script>
             var swiper = new Swiper('.swiper_02', {
-              navigation: {
-                nextEl: '.swiper_02 .swiper-button-next',
-                prevEl: '.swiper_02 .swiper-button-prev',
-              },
+                autoplay: true,//可选选项，自动滑动
+                loop : true,
+                navigation: {
+                    nextEl: '.swiper_02 .swiper-button-next',
+                    prevEl: '.swiper_02 .swiper-button-prev',
+                },
             });
-             var mySwiper = new Swiper('.swiper_01', {
+            var mySwiper = new Swiper('.swiper_01', {
             // navigation: {
             //   nextEl: '.swiper_01 .swiper-button-next',
             //   prevEl: '.swiper_01 .swiper-button-prev',
             // },
             autoplay:{delay:1},//自动滚动
             loop:true,//循环
-            speed:5000,//滚动速度
-            slidesPerView : 11,//slide可见数量
-            spaceBetween : 40//slide之间的距离（单位px）
-
-          });
+            speed:10000,//滚动速度
+            slidesPerView : 1,//slide可见数量
+            spaceBetween :50//slide之间的距离（单位px）
+            });
         </script>
     </body>
 </html>
